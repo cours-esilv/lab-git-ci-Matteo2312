@@ -26,6 +26,8 @@ jobs:
         if: always()
         with:
           files: target/**/*.xml
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
               # Publie les fichiers présents dans le dossier target dans un build artifact
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
