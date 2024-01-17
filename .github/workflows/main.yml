@@ -4,6 +4,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 permissions:
   contents: read
+  issues: read
   checks: write
 jobs:
   Explore-GitHub-Actions:
